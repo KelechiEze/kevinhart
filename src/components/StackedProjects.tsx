@@ -35,21 +35,23 @@ const projects = [
     type: 'Brand Film',
     media: '/2im.png',
   },
+
+  // Updated Kevin Hart Projects
   {
     id: 5,
-    title: 'SCENT & SILENCE',
-    year: '2022',
-    type: 'Commercial',
+    title: 'JUMANJI',
+    year: '2019',
+    type: 'Sony Pictures',
     media:
-      'https://images.unsplash.com/photo-1615484477778-ca3b77940c25?auto=format&fit=crop&q=80&w=2000',
+      '/1im4.png',
   },
   {
     id: 6,
-    title: 'THE LIGHT BETWEEN',
-    year: '2025',
-    type: 'Short Film',
+    title: 'LIFT',
+    year: '2024',
+    type: 'Netflix Original',
     media:
-      'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&q=80&w=2000',
+      'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=2000',
   },
 ];
 
@@ -116,7 +118,7 @@ export default function StackedProjects() {
       {projects.map((project) => (
         <section
           key={project.id}
-          className="project-panel relative h-screen w-full overflow-hidden"
+          className="project-panel relative min-h-screen h-[150vh] w-full overflow-hidden"
         >
           {/* Background Media */}
           <div className="absolute inset-0">

@@ -35,7 +35,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section ref={containerRef} className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <section ref={containerRef} className="relative min-h-screen h-[150vh] w-full flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
           ref={imageRef}
