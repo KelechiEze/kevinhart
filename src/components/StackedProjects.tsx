@@ -45,14 +45,6 @@ const projects = [
     media:
       '/1im4.png',
   },
-  {
-    id: 6,
-    title: 'LIFT',
-    year: '2024',
-    type: 'Netflix Original',
-    media:
-      '/lift.jpg',
-  },
 ];
 
 export default function StackedProjects() {
