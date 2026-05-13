@@ -8,9 +8,10 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import LogoMarquee from './components/LogoMarquee';
 import StackedProjects from './components/StackedProjects';
-import AboutSection from './components/AboutSection';
 import Footer from './components/Footer';
 import BottomBar from './components/BottomBar';
+import { ProjectsSection } from "./components/ProjectsSection";
+import { WhyChooseUsSection } from "./components/WhyChooseUsSection";
 
 export default function App() {
   return (
@@ -23,7 +24,8 @@ export default function App() {
           <Hero />
           <LogoMarquee />
           <StackedProjects />
-          <AboutSection />
+          <ProjectsSection />
+         <WhyChooseUsSection />
         </main>
         
         <Footer />

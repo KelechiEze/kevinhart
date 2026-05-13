@@ -35,15 +35,12 @@ const projects = [
     type: 'Brand Film',
     media: '/2im.png',
   },
-
-  // Updated Kevin Hart Projects
   {
     id: 5,
     title: 'JUMANJI',
     year: '2019',
     type: 'Sony Pictures',
-    media:
-      '/1im4.png',
+    media: '/1im4.png',
   },
 ];
 
@@ -63,7 +60,7 @@ export default function StackedProjects() {
           trigger: panel,
           start: 'top top',
           pin: true,
-          pinSpacing: false,
+          pinSpacing: true,
           snap: isLast ? undefined : 0,
         });
 
@@ -107,10 +104,12 @@ export default function StackedProjects() {
 
   return (
     <div ref={containerRef} className="relative z-20">
-      {projects.map((project) => (
+      {projects.map((project, index) => (
         <section
           key={project.id}
-          className="project-panel relative min-h-screen h-[150vh] w-full overflow-hidden"
+          className={`project-panel relative min-h-screen h-[130vh] w-full overflow-hidden ${
+            index === projects.length - 1 ? 'last-panel' : ''
+          }`}
         >
           {/* Background Media */}
           <div className="absolute inset-0">
@@ -195,6 +194,9 @@ export default function StackedProjects() {
           </div>
         </section>
       ))}
+      
+      {/* Spacer div to prevent overflow */}
+      <div className="h-[1px] w-full opacity-0 pointer-events-none" />
     </div>
   );
 }
