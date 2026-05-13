@@ -4,7 +4,7 @@ import { ProjectCard } from "./ProjectCard";
 
 export const ProjectsSection = () => {
   return (
-    <section className="bg-brand-bg py-24 lg:py-40 px-6 lg:px-12 relative z-10 mt-[-1px]" id="projects-section">
+    <section className="bg-white pt-8 pb-24 lg:pt-12 lg:pb-40 px-6 lg:px-12 relative z-10" id="projects-section">
       <div className="max-w-7xl mx-auto">
         {/* Header Area */}
         <div className="flex flex-col lg:flex-row justify-between items-baseline mb-20 lg:mb-32 gap-8">

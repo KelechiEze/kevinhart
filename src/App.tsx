@@ -10,6 +10,7 @@ import LogoMarquee from './components/LogoMarquee';
 import StackedProjects from './components/StackedProjects';
 import Footer from './components/Footer';
 import BottomBar from './components/BottomBar';
+import BrandMarquee from './components/BrandMarquee';
 import { ProjectsSection } from "./components/ProjectsSection";
 import { WhyChooseUsSection } from "./components/WhyChooseUsSection";
 
@@ -24,6 +25,7 @@ export default function App() {
           <Hero />
           <LogoMarquee />
           <StackedProjects />
+          <BrandMarquee />
           <ProjectsSection />
          <WhyChooseUsSection />
         </main>
