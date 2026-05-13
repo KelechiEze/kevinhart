@@ -28,23 +28,23 @@ export const WhyChooseUsSection = () => {
               className="text-4xl sm:text-5xl lg:text-[68px] font-bold font-tight leading-[1.1] lg:leading-[1.05] tracking-tight text-brand-text-primary"
             >
               From comedy clubs <br />
-              to global icon — <br />
+              to global icon<br />
               <span className="text-brand-text-secondary">the Kevin Hart blueprint.</span>
             </motion.h2>
           </div>
         </div>
 
-        {/* Content Area */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 xl:gap-24 items-start">
+        {/* Content Area - Adjusted gap to bring elements closer */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 xl:gap-12 items-start">
           
-          {/* Left: Tall Portrait Image */}
-          <div className="lg:col-span-4 xl:col-span-3">
+          {/* Left: Tall Portrait Image - Further reduced size */}
+          <div className="lg:col-span-3 xl:col-span-3">
             <motion.div
               initial={{ opacity: 0, scale: 0.98 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1, ease: [0.65, 0, 0.35, 1] }}
-              className="relative rounded-[32px] overflow-hidden aspect-[1/2.2] lg:max-w-[380px] shadow-sm bg-[#F0F0F0] mx-auto lg:mx-0 group cursor-pointer"
+              className="relative rounded-[32px] overflow-hidden aspect-[1/2] lg:max-w-[340px] shadow-sm bg-[#F0F0F0] mx-auto lg:mx-0 group cursor-pointer"
             >
               <div className="absolute top-6 right-6 z-10">
                  <div className="w-8 h-8 bg-black/80 backdrop-blur-md text-white rounded-full flex items-center justify-center hover:bg-black transition-colors group-hover:scale-110 transition-transform duration-300">
@@ -60,7 +60,7 @@ export const WhyChooseUsSection = () => {
                   transition={{ delay: 0.5, duration: 0.8 }}
                   className="text-white text-[13px] lg:text-[14px] leading-relaxed mb-4 max-w-[200px] font-medium"
                 >
-                  From stand-up to stadiums — <br />
+                  From stand-up to stadiums<br />
                   the ultimate success story.
                 </motion.p>
                 <motion.button 
@@ -83,8 +83,8 @@ export const WhyChooseUsSection = () => {
             </motion.div>
           </div>
 
-          {/* Right: Content & Cards */}
-          <div className="lg:col-span-8 xl:col-span-9 flex flex-col gap-12 lg:gap-16">
+          {/* Right: Content & Cards - Adjusted to take remaining space */}
+          <div className="lg:col-span-9 xl:col-span-9 flex flex-col gap-12 lg:gap-16">
             <div className="flex justify-center lg:justify-end">
               <motion.p 
                 initial={{ opacity: 0, y: 10 }}
