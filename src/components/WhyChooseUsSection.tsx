@@ -34,10 +34,10 @@ export const WhyChooseUsSection = () => {
           </div>
         </div>
 
-        {/* Content Area - Adjusted gap to bring elements closer */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 xl:gap-12 items-start">
+        {/* Content Area - Changed to items-end for bottom alignment */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 xl:gap-12 items-end">
           
-          {/* Left: Tall Portrait Image - Further reduced size */}
+          {/* Left: Tall Portrait Image */}
           <div className="lg:col-span-3 xl:col-span-3">
             <motion.div
               initial={{ opacity: 0, scale: 0.98 }}
