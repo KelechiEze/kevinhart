@@ -12,7 +12,7 @@ const projects = [
     title: 'ROAST OF KEVIN HART',
     year: '2026',
     type: 'Netflix',
-    media: '/2ndvid.mp4',
+    media: '/Newvid.mp4',
   },
   {
     id: 2,
@@ -23,10 +23,10 @@ const projects = [
   },
   {
     id: 3,
-    title: 'ECHOES OF US',
-    year: '2023',
-    type: 'Wedding Film',
-    media: '/1stvid.mp4',
+    title: 'ROAST OF KEVIN HART',
+    year: '2026',
+    type: 'Netflix',
+    media: '/2ndvid.mp4',
   },
   {
     id: 4,
