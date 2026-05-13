@@ -51,7 +51,7 @@ const projects = [
     year: '2024',
     type: 'Netflix Original',
     media:
-      'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=2000',
+      '/lift.jpg',
   },
 ];
 
