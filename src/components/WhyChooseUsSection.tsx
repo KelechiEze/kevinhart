@@ -34,17 +34,17 @@ export const WhyChooseUsSection = () => {
           </div>
         </div>
 
-        {/* Content Area - Changed to items-end for bottom alignment */}
+        {/* Content Area - items-end for bottom alignment */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 xl:gap-12 items-end">
           
-          {/* Left: Tall Portrait Image */}
-          <div className="lg:col-span-3 xl:col-span-3">
+          {/* Left: Tall Portrait Image - Increased width */}
+          <div className="lg:col-span-4 xl:col-span-4">
             <motion.div
               initial={{ opacity: 0, scale: 0.98 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1, ease: [0.65, 0, 0.35, 1] }}
-              className="relative rounded-[32px] overflow-hidden aspect-[1/2] lg:max-w-[340px] shadow-sm bg-[#F0F0F0] mx-auto lg:mx-0 group cursor-pointer"
+              className="relative rounded-[32px] overflow-hidden aspect-[1/2] lg:max-w-[420px] shadow-sm bg-[#F0F0F0] mx-auto lg:mx-0 group cursor-pointer"
             >
               <div className="absolute top-6 right-6 z-10">
                  <div className="w-8 h-8 bg-black/80 backdrop-blur-md text-white rounded-full flex items-center justify-center hover:bg-black transition-colors group-hover:scale-110 transition-transform duration-300">
@@ -84,7 +84,7 @@ export const WhyChooseUsSection = () => {
           </div>
 
           {/* Right: Content & Cards - Adjusted to take remaining space */}
-          <div className="lg:col-span-9 xl:col-span-9 flex flex-col gap-12 lg:gap-16">
+          <div className="lg:col-span-8 xl:col-span-8 flex flex-col gap-12 lg:gap-16">
             <div className="flex justify-center lg:justify-end">
               <motion.p 
                 initial={{ opacity: 0, y: 10 }}
